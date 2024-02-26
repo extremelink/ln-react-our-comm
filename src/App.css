@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+nav{
+  padding:16px;
+  background-color: purple;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-container{
+  display:flex;
+  justify-content:space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-container .logo{
+  height:50px;
+  width:20px;
+  /* object-fit: fill; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-container .logo img{
+  
+  /* object-fit: fill; */
+}
+.nav-container ul{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  gap:10px;
+}
+.hero{
+  height:600px;
+  border: 5px solid rgb(130, 14, 184);
+  object-fit: contain;
+}
+.hero img{
+  height:100%;
+  width:100%;
+  display: block;
+  /* object-fit: cover; */
 }
 
-.App-link {
-  color: #61dafb;
+.products{
+  margin: 12px;
+}
+.products-container{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+  row-gap: 32px;
+}
+.product-card{
+border: 1px solid rgb(15, 208, 214);
+border-radius: 16px;
+background-color: rgb(40, 8, 58);
+display: inline-block;
+padding:7px;
+margin: 10px;
+
+/* height:400px;
+width:400px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-img{
+  width:300px;
+  height:250px;
+  display: flex;
+}
+.product-img img{
+  width:100%;
+  height:95%;
+  object-fit:fill;
+}
+
+.product-name{
+  font-weight:600;
+  margin-bottom: 6px;
+}
+.product-desc{
+  font-size: 14px;  
+  color:purple;
+  margin-bottom:8px;
+}
+
+.product-price{
+  display: flex;
+  gap:8px;
+}
+
+.product-price-final{
+font-size: 22px;
+}
+.product-price-original{
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.product-price-discount{
+  font-size: 18px;
+  font-weight:600;
+}
+
+.footer{
+  background-color: rgb(167, 80, 167);
+  padding:28px;
+  text-align:center;
+  font-weight:600;
 }
