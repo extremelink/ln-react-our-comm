@@ -11,13 +11,10 @@ nav{
   width:20px;
   /* object-fit: fill; */
 }
-.nav-container .logo img{
-  
-  /* object-fit: fill; */
-}
+
 .nav-container ul{
   display: flex;
-  list-style: none;
+  /* list-style: none; */
   gap:10px;
 }
 .hero{
@@ -35,15 +32,19 @@ nav{
 .products{
   margin: 12px;
 }
+
 .products-container{
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  /* justify-content: space-evenly; */
-  flex-wrap: wrap;
-  row-gap: 32px;
+ max-width: 1100px;
+ display: flex;
+ margin:auto;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ row-gap: 32px;
 }
 .product-card{
+  /* sizing is very important as it might scale large or small according the img, length of description, price etc*/
+height:350px;
+width:300px;
 border: 1px solid rgb(15, 208, 214);
 border-radius: 16px;
 background-color: rgb(40, 8, 58);
@@ -67,6 +68,7 @@ width:400px; */
 }
 
 .product-name{
+  font-size: 18px;
   font-weight:600;
   margin-bottom: 6px;
 }
@@ -74,6 +76,9 @@ width:400px; */
   font-size: 14px;  
   color:purple;
   margin-bottom:8px;
+}
+.product-desc p{
+  font-size: 12px;
 }
 
 .product-price{
@@ -98,4 +103,50 @@ font-size: 22px;
   padding:28px;
   text-align:center;
   font-weight:600;
+}
+
+.product-detail-container{
+  max-width:900px;
+  display: flex;
+  margin:auto;
+  align-items: center;
+  min-height:80vh;
+}
+.product-detail{
+    margin:auto;
+  /* padding: 32px 16px; */
+}
+.product-detail img{
+  height:500px;
+  width:400px;
+}
+
+.link-container{
+  width:350px;
+  padding:10px;
+  display: flex;
+}
+.link-container ul {
+  display: flex;
+  margin: auto;
+}
+.link-container ul li{
+  display: flex;
+  margin:auto;
+  font-size: 18px;
+  list-style: none;
+}
+.link-container ul li a{
+  margin: 15px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+.link-container ul li a:hover{
+  color: yellow;
+  text-decoration: underline;
+}
+.link-container ul li a:visited{
+  /* color: yellow; */
+  text-decoration: underline;
 }

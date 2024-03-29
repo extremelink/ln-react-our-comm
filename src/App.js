@@ -1,20 +1,25 @@
 import './App.css'
+import Home from './pages/Home';
+import About from './pages/About';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
-// import { Greet,GreetOne } from './components/Header';
-import Hero from './components/Hero';
 import Footer from './components/Footer'
-import Products from './components/Products';
+import NotFound from './pages/NotFound';
+import ProductDetail from './pages/ProductDetail';
+import Contact from './pages/Contact';
 
 function App(){
   return(
     <div className='app'>
-      {/* <img src={Shinchan} width={'500px'} alt=""/> */}
       <Header />
-      {/* <Greet />
-      <GreetOne /> */}
-      <Hero />
-      <Products />
-      <Footer/>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/product/:productId' element ={<ProductDetail />} />
+        <Route path ='/*' element ={<NotFound />} />
+      </Routes>
+      <Footer />
     </div>
   )
 }

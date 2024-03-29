@@ -1,30 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const ProductCard = () =>{
-    const originalPrice=7000;
-    const discountedPercentage=40;
+const ProductCard = (props) =>{
+    const {id,img,name,desc,price,discountPercentage}=props
+    console.log(props);
+    const originalPrice=price;
+    const discountedPercentage=discountPercentage;
+    console.log(originalPrice,discountedPercentage);
     return (
+        <Link to={'/product/'+id}>
         <div className="product-card">
             <div className="product-img">
-                <img src="https://m.media-amazon.com/images/I/616DKlp2ugL._AC_UL320_.jpg"alt=""/>
+                <img src={img} alt=""/>
             </div>
         <div className="product-name">
-            Men's Regular Dry Fit Gym Sports T-Shirt
+            {name}
         </div>
         <div className="product-desc">
-            2XL Solid Half Sleeve Standard Length
+            <p>{desc}</p>
         </div>
         <div className="product-price">
-            {/* <div className="product-price-final">4500</div>
-            <div className="product-price-original">7000</div>
-            <div className="product-price-discount">40% off</div> */}
              <span className="product-price-final">{originalPrice*(100-discountedPercentage)/100}</span>
-            <span className="product-price-original">{originalPrice}</span>
-            <span className="product-price-discount">{discountedPercentage}% off</span>
-            
+                <span className="product-price-original">{originalPrice}</span>
+                <span className="product-price-discount">{discountedPercentage}% off</span>
         </div>
             
         </div>
+        </Link>
+        
     )
 }
 
