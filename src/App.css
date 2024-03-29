@@ -150,3 +150,22 @@ font-size: 22px;
   /* color: yellow; */
   text-decoration: underline;
 }
+
+.fashionista-container{
+  height:600px;
+  width: 1100px;
+  justify-content: center;
+  /* margin:auto; */
+}
+.fashionista-desc{
+  font-size: 50px;
+}
+.fashionista-img{
+  display: flex;
+  justify-content: space-evenly;
+}
+.fashionista-container img{
+  height:400px;
+  width:350px;
+  /* padding:10px; */
+}

@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import NotFound from './pages/NotFound';
 import ProductDetail from './pages/ProductDetail';
 import Contact from './pages/Contact';
+import Fashionista from './components/Fashionista';
 
 function App(){
   return(
@@ -16,6 +17,7 @@ function App(){
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path ='/fashionista' element={<Fashionista />} />
         <Route path='/product/:productId' element ={<ProductDetail />} />
         <Route path ='/*' element ={<NotFound />} />
       </Routes>

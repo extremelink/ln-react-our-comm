@@ -7,7 +7,7 @@ const productList=[
         discountPercentage:33
     },
     {
-        img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/e/v/b/xxl-01-h-s-just-rider-original-imagwmjtexwjbw4e.jpeg?q=70",
+        img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/o/j/j/m-womenpprefletor-ndless-sports-original-imagu38nrwqpvqpk.jpeg?q=70",
         name:"Women Solid Round Neck Polyester Black T-Shirt",
         desc:"M Solid Full Sleeve Standard Length",
         price:3000,
