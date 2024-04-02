@@ -7,7 +7,6 @@ function Header(){
                 <div className="nav-container">
                     <div className="logo">
                         {<Logo />}
-                        {/* <img src={logo} alt="" /> */}
                     </div>
                     <div className="link-container">
                         <ul>

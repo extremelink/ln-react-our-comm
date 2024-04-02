@@ -155,13 +155,15 @@ font-size: 22px;
   height:600px;
   width: 1100px;
   justify-content: center;
-  /* margin:auto; */
+  align-items: center;
+  margin:auto;
 }
 .fashionista-desc{
   font-size: 50px;
 }
 .fashionista-img{
   display: flex;
+  margin: auto;
   justify-content: space-evenly;
 }
 .fashionista-container img{
@@ -169,3 +171,7 @@ font-size: 22px;
   width:350px;
   /* padding:10px; */
 }
+.logo{
+  height: 100px;
+  width:100px;
+} 
