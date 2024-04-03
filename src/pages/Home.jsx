@@ -1,13 +1,11 @@
 import React from 'react'
 import Hero from '../components/Hero';
-import Products from '../components/Products';
 
 const Home=()=>{
     return(
-        <div>
-            <h1>Home</h1>
+        <div className='home'>
+            <h1 style={{textAlign:'center', color:'blue'}}>Home </h1>
             <Hero />
-            <Products />
         </div>
     )
 }

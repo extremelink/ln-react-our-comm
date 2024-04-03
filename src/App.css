@@ -17,17 +17,7 @@ nav{
   /* list-style: none; */
   gap:10px;
 }
-.hero{
-  height:600px;
-  border: 5px solid rgb(130, 14, 184);
-  object-fit: contain;
-}
-.hero img{
-  height:100%;
-  width:100%;
-  display: block;
-  /* object-fit: cover; */
-}
+
 
 .products{
   margin: 12px;
@@ -51,9 +41,9 @@ background-color: rgb(40, 8, 58);
 display: inline-block;
 padding:7px;
 margin: 10px;
-
-/* height:400px;
-width:400px; */
+}
+.hero img{
+  width:1886px;
 }
 
 .product-img{
@@ -122,33 +112,29 @@ font-size: 22px;
 }
 
 .link-container{
-  width:350px;
+  width:500px;
   padding:10px;
-  display: flex;
 }
-.link-container ul {
-  display: flex;
-  margin: auto;
-}
-.link-container ul li{
+
+.link-container ul a{
   display: flex;
   margin:auto;
-  font-size: 18px;
-  list-style: none;
 }
-.link-container ul li a{
-  margin: 15px;
-  font-size: 24px;
-  color: white;
+a{
+  font-size: 22px;
   text-decoration: none;
+  color:aliceblue;
 }
-.link-container ul li a:hover{
+
+.link-container ul a:hover{
   color: yellow;
   text-decoration: underline;
 }
-.link-container ul li a:visited{
-  /* color: yellow; */
-  text-decoration: underline;
+
+.active{
+  text-transform: uppercase;
+  font-size: 24px;
+  color:yellow;
 }
 
 .fashionista-container{

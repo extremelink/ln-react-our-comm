@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 function Header(){
     return (
@@ -10,9 +10,14 @@ function Header(){
                     </div>
                     <div className="link-container">
                         <ul>
-                            <li><Link to='/'>Home</Link></li>
+                            <NavLink exact to="/" activeClassName="active">Home</NavLink>
+                            <NavLink to="/products" activeClassName="active">Products</NavLink>
+                            <NavLink to="/about" activeClassName="active">About</NavLink>
+                            <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+                            {/* <li><Link to='/' style={{visited:'yellow',active:'blue'}}>Home</Link></li>
+                            <li><Link to ='/products'>Products</Link></li>
                             <li><Link to='/about'>About</Link></li>
-                            <li><Link to='/contact'>Contact</Link></li>
+                            <li><Link to='/contact'>Contact</Link></li> */}
                         </ul>
                     </div>
                 </div>
@@ -22,10 +27,3 @@ function Header(){
 }
 
 export default Header;
-
-export function Greet(){
-    return <p>Hello World!!</p>
-}
-export function GreetOne(){
-    return <p>Hello greeting!!</p>
-}

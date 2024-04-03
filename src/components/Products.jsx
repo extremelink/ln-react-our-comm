@@ -3,7 +3,7 @@ import ProductCard from './ProductCard';
 import productList from "../data/productList";
 
 const Products=()=>{
-    console.log(productList)
+    // console.log(productList)
     return(
         <div className="products">
             <div className="products-container">
